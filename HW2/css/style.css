@@ -1,0 +1,126 @@
+html,body{
+    height: 100%;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+    height: 15%;
+
+}
+.header h1{
+    color:rosybrown;
+
+}
+.menu{
+    max-width: 830px;
+    margin: auto;
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 5%;
+
+}
+.menu ul{
+
+    list-style-type: square;
+    margin-top: 0;
+
+}
+.menu ul li{
+    
+    display: inline;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:mintcream;
+    background-color:lightsteelblue;
+    border-radius: 2px;
+    padding: 7px 50px;
+}
+.menu ul li a:hover{
+    background-color: lightslategray;
+}
+.main{
+    background-color: rgb(241, 224, 241);
+    width: 100%;
+    height: 70%;
+
+}
+.footer{
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 10%;
+
+}
+.footer ul{
+    
+    list-style-type: square;
+    margin-top: 10px;
+
+}
+.footer ul li{
+    
+    display: inline;
+}
+.footer ul li a{
+    text-decoration: none;
+    color:mintcream;
+    background-color:lightsteelblue;
+    border-radius: 2px;
+    padding: 7px 50px;
+}
+.footer ul li a:hover{
+    background-color: lightslategray;
+}
+.clickable{
+    background-color:rgb(226, 242, 247);
+    position: absolute;
+    height: 70%;
+    width: 30%;
+
+}
+.clickable h1{
+    color:rgb(111, 103, 165);
+}
+.clickable ul{
+    display: contents;
+    list-style-type: square;
+}
+.clickable ul li a{
+    text-decoration: none;
+    color:rgb(111, 103, 165);
+    padding: 7px 10px;
+}
+.paragraph{
+    background-color:rgb(253, 241, 221);
+    position:absolute;
+    height: 70%;
+    left: 30%;
+    width: 40%;
+    color: rosybrown;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.paragraph h1::first-letter{
+    color:rgb(133, 130, 130);
+}
+.images{
+    position: absolute;
+    height: 70%;
+    left: 70%;
+    width: 30%;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.images h1{
+    color:rgb(111, 103, 165);
+}

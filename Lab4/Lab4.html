@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Lab4
+        </title>
+        <script type="text/JavaScript">
+            
+            function showImg(){
+                
+                var sz1=document.getElementById("wdth");
+                var wSize=sz1.value;
+                var sz2=document.getElementById("hght");
+                var hSize=sz2.value;
+                var fName=document.getElementById("fileName");
+                var imgName=fName.value;
+                var alt="lab4";
+                
+                document.write("<img src="+imgName+" alt="+alt+" height="+hSize+" width="+wSize+">");
+            }
+        </script>
+        <input type="text" id="fileName" value="Enter image name..."/>
+        <select name="width" id="wdth">
+            <option value="100"> 100 </option>
+            <option value="200"> 200 </option>
+            <option value="300"> 300 </option>
+        </select>
+        <select name="height" id="hght">
+            <option value="100"> 100 </option>
+            <option value="200"> 200 </option>
+            <option value="300"> 300 </option>
+        </select>
+        <button type="button" onclick="showImg()"> Enter </button>
+    </head>
+    <body>
+        
+    </body>
+</html>

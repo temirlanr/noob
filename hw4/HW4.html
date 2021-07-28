@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+<head>
+	<script>
+		function buy(){			
+			
+			var pen=document.getElementById("pn");
+			var pnl=document.getElementById("pnl");
+			var not=document.getElementById("nt");
+			var sta=document.getElementById("st");
+			var era=document.getElementById("er");
+			var tot=document.getElementById("totalCost");
+			var ite=document.getElementById("selectedItems");
+			
+			var txt="";
+			var pri=0;
+			
+			if (pen.checked){
+				pri+=200;
+				txt=txt+"<li>Pen</li>";
+			}
+			
+			if (pnl.checked){
+				pri+=150;
+				txt=txt+"<li>Pencil</li>";
+			}
+			
+			if (not.checked){
+				pri+=300;
+				txt=txt+"<li>Notebook</li>";
+			}
+			
+			if (sta.checked){
+				pri+=350;
+				txt=txt+"<li>Stapler</li>";
+			}
+		
+			if (era.checked){
+				pri+=80;
+				txt=txt+"<li>Eraser</li>";
+			}
+			
+			tot.innerHTML=pri;
+
+			ite.innerHTML=txt;
+		}
+	</script>
+</head>
+
+<body>
+
+	<table border="1">
+		<tr>
+			<td><img src="pen.jpg" width="80" height="80"><br>Pen</td>
+			<td><input type="checkbox" id="pn" value="200"> 200</td>
+		</tr>
+		<tr>
+			<td><img src="pencil.jpg" width="80" height="80"><br>Pencil</td>
+			<td><input type="checkbox" id="pnl" value="150">150</td>
+		</tr>
+		<tr>
+			<td><img src="notebook.jpg" width="80" height="80"><br>Notebook</td>
+			<td><input type="checkbox" id="nt" value="300">300</td>
+		</tr>
+		<tr>
+			<td><img src="stapler.jpg" width="80" height="80"><br>Stapler</td>
+			<td><input type="checkbox" id="st" value="350">350</td>
+		</tr>
+		<tr>
+			<td><img src="eraser.jpg" width="80" height="80"><br>Eraser</td>
+			<td><input type="checkbox" id="er" value="80">80</td>
+		</tr>
+
+	</table>
+	
+
+	<button type="button" onclick="buy();">Buy</button>
+
+	<p id="par1">You ordered:</p>
+	<ul id="selectedItems" style="list-style-type: disc">
+		<!--After the user clicks, the program should to list the selected items here using the innerHTML property--> 
+
+	</ul>
+	
+	<p id="par2">You need to pay: 
+		<span id="totalCost">
+			<!-- After the user clicks, the program should to write the total cost here using the innerHTML property--> 
+
+		</span>
+	</p>
+ 
+  
+</body>
+</html>
